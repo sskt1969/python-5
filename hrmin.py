@@ -1,0 +1,10 @@
+ch1,v1=input().split()
+ch1,v1=int(ch1),int(v1)
+ch2,v2=input().split()
+ch2,v2=int(ch2),int(v2)
+le1=(ch1*60)+v1
+le2=(ch2*60)+v2
+tmin=abs(le1-le2)
+m=tmin%60
+hrs=(tmin-m)//60
+print(int(hrs),int(m))
